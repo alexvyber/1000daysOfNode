@@ -8,14 +8,20 @@ if (process.argv.length !== 5) {
   throw new Error("provie topic hours and message ")
 }
 
-function composeMessage(now: DateTime) {
+function composeMessage({
+  now,
+  topic,
+  duration,
+  message,
+}: {
+  now: DateTime
+  topic: string
+  duration: string
+  message: string
+}) {
   var start = DateTime.fromISO(START_DATE).toUTC()
 
   var daysSinceStart = now.startOf("day").diff(start.startOf("day")).as("days").toFixed(0)
-
-  var topic = process.argv[2]
-  var duration = process.argv[3]
-  var message = process.argv[4]
 
   var [hours, minutes] = duration.split(":")
   var duration = Duration.fromObject({ hours: Number(hours), minutes: Number(minutes || 0) })
@@ -28,7 +34,11 @@ function composeMessage(now: DateTime) {
 }
 
 var now = DateTime.now().toUTC()
-composeMessage(now)
+var topic = process.argv[2]
+var duration = process.argv[3]
+var message = process.argv[4]
+
+composeMessage({ now, topic, duration, message })
 
 // for (let i = 0; i < 255; i += 9) {
 //   var now = DateTime.now().plus({ days: i }).toUTC()
