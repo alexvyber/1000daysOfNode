@@ -1,3 +1,7 @@
+- Path ✅
+- OS ✅
+- Query String ✅
+---
 - Modules: ECMAScript modules
 - Command-line API
 - REPL
@@ -7,7 +11,6 @@
 - Assert
 - Utils
 - Debugger
-- Query String
 - URL
 - Test Runner
 - Diagnostics Channel
@@ -16,8 +19,6 @@
 - Global objects
 - Permissions
 ---
-- OS
-- Path
 - File System
 - Events
 - Performance measurement APIs

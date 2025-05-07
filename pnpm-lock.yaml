@@ -17,6 +17,9 @@ importers:
       luxon:
         specifier: ^3.6.1
         version: 3.6.1
+      qs-esm:
+        specifier: ^7.0.2
+        version: 7.0.2
     devDependencies:
       '@types/luxon':
         specifier: ^3.6.2
@@ -37,6 +40,10 @@ packages:
     resolution: {integrity: sha512-tJLxrKJhO2ukZ5z0gyjY1zPh3Rh88Ej9P7jNrZiHMUXHae1yvI2imgOZtL1TO8TW6biMMKfTtAOoEJANgtWBMQ==}
     engines: {node: '>=12'}
 
+  qs-esm@7.0.2:
+    resolution: {integrity: sha512-D8NAthKSD7SGn748v+GLaaO6k08Mvpoqroa35PqIQC4gtUa8/Pb/k+r0m0NnGBVbHDP1gKZ2nVywqfMisRhV5A==}
+    engines: {node: '>=18'}
+
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
@@ -51,5 +58,7 @@ snapshots:
   es-toolkit@1.37.2: {}
 
   luxon@3.6.1: {}
+
+  qs-esm@7.0.2: {}
 
   undici-types@6.21.0: {}

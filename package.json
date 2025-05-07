@@ -13,7 +13,8 @@
 	"dependencies": {
 		"@types/node": "^22.15.3",
 		"es-toolkit": "^1.37.2",
-		"luxon": "^3.6.1"
+		"luxon": "^3.6.1",
+		"qs-esm": "^7.0.2"
 	},
 	"devDependencies": {
 		"@types/luxon": "^3.6.2"
